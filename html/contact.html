@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Brady</title>
+    <link href="../css/michaelbrady_styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="../images/logo.ico">
+</head>
+<body>
+    <nav>
+        <div class="normnav">
+           <a href="index.html"><img src="../images/logo.jpg" class="logo"></a>
+           <a href="index.html" class="listitem">Home</a>
+           <a href="bio.html" class="listitem">About</a>
+           <a href="music.html" class="listitem">Music</a>
+           <a href="contact.html" class="listitem active">Contact</a>
+       </div>
+       <div class="mobnav">
+             <input class="checkbox" type="checkbox" name="" id="" />
+             <div class="hamburger-lines">
+                 <span class="line line1"></span>
+                 <span class="line line2"></span>
+                 <span class="line line3"></span>
+             </div>  
+             <a class="logocont">
+              <img src="../images/logo.jpg" class="moblogo">
+             </a>
+             <div class="menu-items">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="bio.html">About</a></li>
+              <li><a href="music.html">Music</a></li>
+              <li><a href="contact.html" class="active">Contact</a></li>
+              <li><a href="linksreference.html">Links Reference</a></li>
+             </div>
+       </div>
+    </nav>
+    <div class="formcont">
+        <h2>Need classical or jazz piano for a wedding, party, or other event? Fill
+            out the form below and I’ll be in touch with you as soon as possible.</h2>
+        <form action="contact.html" method="POST" data-netlify="true" onsubmit="validate(event)" name="myForm">
+            <input type="text" name="name" placeholder="Name" id="name"><br>
+            <div id="nameerror">Please enter your name<br></div>
+            <input type="text" name="email" placeholder="Email" id="email"><br>
+            <div id="emailerror">Please enter your email<br></div>
+            <textarea rows="5" name="message" cols="30" placeholder="Message" id="message"></textarea><br>
+            <div id="messageerror">Please leave a message<br></div>
+            <input type="submit" name="submit" value="SUBMIT" class="submit">
+        </form>
+        <img src="../images/italy.jpg">
+    </div>
+    <footer>
+        <a href="https://www.instagram.com/mikepianomusic/" class="fa fa-instagram fa-2x"></a>
+        <script>
+            var a ="michael"
+            var b ="brady712"
+            var c ="@gmail.com"
+            var d = a + b + c
+            document.write("<a href=\"mailto:" + d + "\" class='fas fa-envelope fa-2x'></a>");
+        </script>
+        <a href="https://www.youtube.com/channel/UCKs7h_9IUnQBR72LUcEnehg" class="fa fa-youtube-square fa-2x"></a>
+        <br>
+        <script>
+            var e ="410-"
+            var f ="608"
+            var g ="-8071"
+            var h = e + f + g
+            document.write("<a href=\"tel:" + h + "\"" + "class='fas fa-phone-alt'>" + h + "</a>");
+          </script>
+        <br>
+        <div class="copy">&copy; Michael Brady 2022</div>
+    </footer>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        function validate(event){
+            var name = document.getElementById('name').value
+            var email = document.getElementById('email').value
+            var message = document.getElementById('message').value
+            if(name == "" || email == "" || message == ""){
+                if(name == ""){                                 
+                    document.getElementById("nameerror").style.display = "inline";
+                    document.getElementById("name").style.borderColor = "rgb(186, 14, 14)";  
+                }
+                if(email == ""){                              
+                    document.getElementById("emailerror").style.display = "inline"; 
+                    document.getElementById("email").style.borderColor = "rgb(186, 14, 14)";   
+                }
+                if(message == ""){                              
+                    document.getElementById("messageerror").style.display = "inline";
+                    document.getElementById("message").style.borderColor = "rgb(186, 14, 14)";    
+                }
+                if(name != ""){                                 
+                    document.getElementById("nameerror").style.display = "none";  
+                    document.getElementById("name").style.borderColor = "#f4f4f4";  
+                }
+                if(email != ""){                                 
+                    document.getElementById("emailerror").style.display = "none";  
+                    document.getElementById("email").style.borderColor = "#f4f4f4";  
+                }
+                if(message != ""){                              
+                    document.getElementById("messageerror").style.display = "none"; 
+                    document.getElementById("message").style.borderColor = "#f4f4f4";   
+                }
+                event.preventDefault();
+            }
+            else{
+                alert("Form successfully submitted!");
+            }
+        }           
+    </script>
+</body>
+</html>

@@ -1,0 +1,637 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: garamond;
+    src: url(../fonts/Garamond\ Premier\ Pro\ Regular.ttf);
+    font-family: museo;
+    src: url(../fonts/MuseoSans-300.otf);
+}
+body{
+  position: relative;
+}
+footer{
+  width: 100%;
+  height: 80px;
+  bottom: 0;
+  background: #192231;
+  color: #f4f4f4;
+  text-align: center;
+  font-family: garamond, Garamond, serif;
+}
+footer a{
+  font-family: garamond, Garamond, serif;
+  color: #f4f4f4;
+  font-weight: 100;
+  text-decoration: none;
+  padding: 5px;
+  transition: .25s;
+}
+footer a:hover{
+  color: #eddbcd;
+}
+.fa-phone-alt{
+  text-decoration: underline;
+}
+.copy{
+  font-size: 10px;
+}
+/*Nav*/
+.mobnav{
+    display: none;
+ }
+ .normnav{
+    height: 70px;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: fixed;
+    background-color: #192231;
+    width: 100%;
+    z-index: 99;
+ }
+ .logo{
+    height: 70px;
+    display: block;
+ }
+ .normnav a{
+    text-decoration: none;
+    color: #f4f4f4;
+    font-family: museo, Arial, sans-serif;
+    font-size: 20px;
+    transition: .25s;
+ }
+ .normnav a:hover{
+    color: #eddbcd;
+ }
+ .listitem{
+    margin-left: 30px;
+ }
+ .active{
+    color: #eddbcd !important;
+ }
+ 
+/*Home*/
+.mid{
+    background-image: url(../images/recital.jpg);
+    padding-top: 70px;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    box-shadow:inset 0 0 0 100vw rgba(0, 0, 0, 0.5);
+}
+h1{
+    color:#f4f4f4;
+    font-family: museo, Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 100;
+    padding-top: 20px;
+    margin-left: 20px;
+    animation: fade 4s;
+}
+.mid h2{
+    color:#f4f4f4;
+    font-family: museo, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    margin-left: 20px;
+    animation: fade 4s;
+}
+.homevid video{
+  width: 350px;
+  border-radius: 5px;
+  border: 5px solid #f4f4f4;
+}
+.homevid{
+  color: #f4f4f4;
+  font-family: garamond, Garamond, serif;
+  text-align: center;
+  margin-left: 65%;
+  margin-top: 10%;
+  animation: fade 4s;
+}
+@keyframes fade{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+/*About*/
+.bio{
+  padding-top: 70px;
+  background-image: url(../images/piano.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow:inset 0 0 0 100vw rgba(0, 0, 0, 0.5);
+  color: #f4f4f4;
+  font-family: garamond, Garamond, serif;
+  min-height: calc(100vh - 80px);
+}
+.bio img{
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 50%;
+  border: 5px solid #f4f4f4;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.bio p{
+  padding: 20px 50px 20px 50px;
+  font-size: 20px;
+}
+/*Music*/
+.vids{
+  padding-top: 70px;
+  background: url(../images/etude.png);
+  box-shadow:inset 0 0 0 100vw rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-position: center;
+  min-height: calc(100vh - 100px);
+}
+.vids p{
+  padding: 5px;
+  text-align: center;
+  color: #f4f4f4;
+  font-family: garamond, Garamond, serif;
+  box-shadow:inset 0 0 0 100vw rgba(25, 34, 49, 0.5);
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.normvids td p{
+  margin: 10px;
+}
+.vids a{
+  border: 5px solid #192231;
+  border-radius: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  position: relative;
+  width: 200px;
+  height: 100px;
+}
+.play{
+  margin: auto;
+  position: absolute;
+  inset: 0;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid #f4f4f4;
+  transform: rotate(90deg);
+}
+.mobvids{
+  display: none;
+}
+.normvids td{
+  padding: 30px;
+}
+.normvids table{
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
+}
+/*Contact*/
+.formcont{
+  padding-top: 70px;
+  background: url(../images/chopin.png);
+  background-position: center;
+  background-size: cover;
+  box-shadow:inset 0 0 0 100vw rgba(0, 0, 0, 0.5);
+  padding-bottom: 30px;
+}
+.formcont h2{
+  box-shadow:inset 0 0 0 100vw rgba(25, 34, 49, 0.5);
+  font-size: 25px;
+  padding: 5px;
+  text-align: center;
+  color:#f4f4f4;
+  font-family: museo, Arial, sans-serif;
+}
+form{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background: rgba(25, 34, 49, 0.5);
+  width: 500px;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 30px;
+}
+form input{
+  background:#192231;
+  color: #f4f4f4;
+  font-family: garamond, Garamond, serif;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 10px;
+  border: 2px solid #f4f4f4;
+  font-size: 15px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #f4f4f4;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #f4f4f4;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #f4f4f4;
+}
+.formcont img{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 300px;
+  border: 5px solid #192231;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+textarea{
+  background:#192231;
+  color: #f4f4f4;
+  font-family: garamond, Garamond, serif;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 10px;
+  border: 2px solid #f4f4f4;
+  font-size: 15px;
+}
+form div{
+  color: #f4f4f4;
+  font-family: garamond, Garamond, serif;
+  background: rgb(186, 14, 14);
+  border: 2px solid #f4f4f4;
+  display: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  padding: 2px;
+}
+.submit{
+  color: #f4f4f4;
+  cursor: pointer;
+  transition: .25s;
+}
+.submit:hover{
+  color: #eddbcd;
+}
+/*Links References*/
+.references{
+  padding-top: 70px;
+  background: url(../images/chopin.png);
+  box-shadow:inset 0 0 0 100vw rgba(25, 34, 49, 0.5);
+  min-height: calc(100vh - 100px);
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.references th{
+  font-family: museo, Arial, sans-serif;
+  color: #f4f4f4;
+  border: 5px solid #eddbcd;
+}
+.references td{
+  font-family: garamond, Garamond, serif;
+  color: #f4f4f4;
+  padding: 15px;
+  border: 5px solid #eddbcd;
+}
+td a{
+  color: #eddbcd;
+}
+.references table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.references td:nth-child(1) {
+  text-align: center;
+  background: #192231;
+}
+.references td:nth-child(2) {
+  background: #f4f4f4;
+  color: #192231;
+}
+.references td:nth-child(3) {
+  background: #192231;
+  padding-left: 50px;
+}
+/*Phone styles*/
+@media only screen and (max-width: 539px){
+    /*Nav*/
+    .normnav{
+       display: none;
+    }
+    .moblogo{
+       height: 70px;
+       padding: 0;
+       margin: 0;
+    }
+    .logocont{
+       display: flex;
+       display: -webkit-flex;
+       justify-content: right;
+       position: absolute;
+       top: 0;
+       width: 100%;
+       height: 70px;
+    }
+     .mobnav{
+       display: inline-block;
+       position: fixed;
+       height: 70px;
+       width: 100%;
+       background: #192231;
+       z-index: 99;
+     }
+     .mobnav li {
+       list-style: none;
+     }
+     .mobnav .menu-items a {
+       text-decoration: none;
+       color: #f4f4f4;
+       font-weight: 500;
+       font-size: 30px;
+       font-family: museo, Arial, sans-serif;
+     }
+     .checkbox {
+       position: absolute;
+       display: block;
+       height: 32px;
+       width: 32px;
+       top: 15px;
+       left: 20px;
+       z-index: 5;
+       opacity: 0;
+       cursor: pointer;
+     }
+    .hamburger-lines {
+       display: block;
+       height: 26px;
+       width: 32px;
+       position: absolute;
+       top: 15px;
+       left: 20px;
+       z-index: 2;
+       display: -webkit-flex;
+       display: flex;
+       -webkit-flex-direction: column;
+       flex-direction: column;
+       justify-content: space-between;
+     }
+    .hamburger-lines .line {
+       display: block;
+       height: 4px;
+       width: 100%;
+       border-radius: 10px;
+       background: #f4f4f4;
+     }
+    .hamburger-lines .line1 {
+       transform-origin: 0% 0%;
+       transition: transform 0.4s ease-in-out;
+     }
+    .hamburger-lines .line2 {
+       transition: transform 0.2s ease-in-out;
+     }
+    .hamburger-lines .line3 {
+       transform-origin: 0% 100%;
+       transition: transform 0.4s ease-in-out;
+     }
+     .mobnav .menu-items {
+       width: 100%;
+       transform: translate(-150%);
+       transition: transform 0.5s ease-in-out;
+       display: -webkit-flex;
+       display: flex;
+       -webkit-flex-direction: column;
+       flex-direction: column;
+       align-items: center;
+       background-color: #192231;
+       padding-top: 20px;
+     }
+     .mobnav .menu-items li {
+       margin-bottom: 20px;
+       font-size: 30px;
+     }
+     .mobnav input[type="checkbox"]:checked ~ .menu-items {
+       transform: translateX(0);
+     }
+     
+     .mobnav input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+       transform: rotate(45deg);
+     }
+     
+     .mobnav input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+       transform: scaleY(0);
+     }
+     
+     .mobnav input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+       transform: rotate(-45deg);
+     }
+     
+     .mobnav input[type="checkbox"]:checked ~ .logo{
+       display: none;
+     }
+     /*About*/
+    .bio > img{
+      width: 200px;
+      margin-top: 10%;
+    }
+    .bio > p{
+      padding: 10px;
+    }
+    .bio:after{
+      position: static;
+    }
+    /*Home*/
+    .homevid{
+        width: 100vw;
+        margin-top: 30%;
+        margin-left: 0;
+    }
+    .mid h1, .mid h2{
+      margin: 0;
+      text-align: center;
+    }
+    .homevid video{
+      width: 100vw;
+      border-right: none;
+      border-left: none;
+      border-radius: 0;
+    }
+    /*Music*/
+    .vids{
+      padding: 10px;
+      padding-top: 80px;
+    }
+    .vids p{
+      width: 90%;
+      margin-top: 10px;
+      font-size: 20px;
+    }
+    .vids a{
+      width: 90%;
+      margin-top: 20px;
+      height: 180px;
+    }
+    .play{
+      width: 0;
+      height: 0;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      border-bottom: 50px solid #f4f4f4;
+      transform: rotate(90deg);
+    }
+    .mobvids{
+      display: inline;
+    }
+    .normvids{
+      display: none;
+    }
+    .vids a:nth-child(1){
+      background: url(../images/chopin.jpg);
+      background-size: cover;
+    }
+    .vids a:nth-child(3){
+      background: url(../images/bach.jpg);
+      background-size: cover;
+    }
+    .vids a:nth-child(5){
+      background: url(../images/beethoven.jpg);
+      background-size: cover;
+    }
+    .vids a:nth-child(7){
+      background: url(../images/pachelbel.jpg);
+      background-size: cover;
+    }
+    .vids a:nth-child(9){
+      background: url(../images/beethoven2.jpg);
+      background-size: cover;
+    }
+    .vids a:nth-child(11){
+      background: url(../images/scriabin.jpg);
+      background-size: cover;
+    }
+    /*Contact*/
+    form{
+      width: 80%;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    form input{
+      width: 50%;
+      font-size: 20px;
+    }
+    form div{
+      font-size: 20px;
+      border-radius: 5px;
+      padding: 2px;
+      margin-left: 10px;
+      width: 75%;
+    }
+    textarea{
+      width: 75%;
+      font-size: 20px;
+    }
+    .formcont img{
+      width: 80%;
+      margin-top: 20px;
+    }
+    .formcont{
+      padding-bottom: 20px;
+    }
+ }
+ /*Tablets*/
+  @media only screen and (min-width: 540px) and (max-width: 912px){
+  /*Home*/
+  .homevid{
+    margin-top: 30%;
+    margin-left: 0;
+}
+.homevid video{
+  width: 100vw;
+  border-right: none;
+  border-left: none;
+  border-radius: 0;
+}
+.mid h1, .mid h2{
+  margin: 0;
+  text-align: center;
+}
+  /*Music*/
+  .vids{
+    padding: 10px;
+    padding-top: 80px;
+  }
+  .vids p{
+    width: 50%;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .vids a{
+    width: 50%;
+    margin-top: 20px;
+    height: 180px;
+  }
+  .play{
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid #f4f4f4;
+    transform: rotate(90deg);
+  }
+  .mobvids{
+    display: inline;
+  }
+  .normvids{
+    display: none;
+  }
+  .vids a:nth-child(1){
+    background: url(../images/chopin.jpg);
+    background-size: cover;
+  }
+  .vids a:nth-child(3){
+    background: url(../images/bach.jpg);
+    background-size: cover;
+  }
+  .vids a:nth-child(5){
+    background: url(../images/beethoven.jpg);
+    background-size: cover;
+  }
+  .vids a:nth-child(7){
+    background: url(../images/pachelbel.jpg);
+    background-size: cover;
+  }
+  .vids a:nth-child(9){
+    background: url(../images/beethoven2.jpg);
+    background-size: cover;
+  }
+  .vids a:nth-child(11){
+    background: url(../images/scriabin.jpg);
+    background-size: cover;
+  }
+  /*Contact*/
+  .formcont h2{
+    padding: 30px;
+  }
+  form input{
+    font-size: 20px;
+  }
+  .formcont img{
+    width: 500px;
+  }
+  .formcont{
+    min-height: calc(100vh - 150px);
+  }
+ }
