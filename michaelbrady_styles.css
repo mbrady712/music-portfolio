@@ -4,9 +4,9 @@
 }
 @font-face {
     font-family: garamond;
-    src: url(../fonts/Garamond\ Premier\ Pro\ Regular.ttf);
+    src: url(fonts/Garamond\ Premier\ Pro\ Regular.ttf);
     font-family: museo;
-    src: url(../fonts/MuseoSans-300.otf);
+    src: url(fonts/MuseoSans-300.otf);
 }
 body{
   position: relative;
@@ -75,7 +75,7 @@ footer a:hover{
  
 /*Home*/
 .mid{
-    background-image: url(../images/recital.jpg);
+    background-image: url(images/recital.jpg);
     padding-top: 70px;
     height: 100vh;
     background-size: cover;
@@ -123,7 +123,7 @@ h1{
 /*About*/
 .bio{
   padding-top: 70px;
-  background-image: url(../images/piano.jpg);
+  background-image: url(images/piano.jpg);
   background-size: cover;
   background-position: center;
   box-shadow:inset 0 0 0 100vw rgba(0, 0, 0, 0.5);
@@ -148,7 +148,7 @@ h1{
 /*Music*/
 .vids{
   padding-top: 70px;
-  background: url(../images/etude.png);
+  background: url(images/etude.png);
   box-shadow:inset 0 0 0 100vw rgba(0, 0, 0, 0.5);
   background-size: cover;
   background-position: center;
@@ -203,7 +203,7 @@ h1{
 /*Contact*/
 .formcont{
   padding-top: 70px;
-  background: url(../images/chopin.png);
+  background: url(images/chopin.png);
   background-position: center;
   background-size: cover;
   box-shadow:inset 0 0 0 100vw rgba(0, 0, 0, 0.5);
@@ -289,7 +289,7 @@ form div{
 /*Links References*/
 .references{
   padding-top: 70px;
-  background: url(../images/chopin.png);
+  background: url(images/chopin.png);
   box-shadow:inset 0 0 0 100vw rgba(25, 34, 49, 0.5);
   min-height: calc(100vh - 100px);
   background-repeat: no-repeat;
@@ -499,19 +499,19 @@ td a{
       display: none;
     }
     .vids a:nth-child(1){
-      background: url(../images/chopin.jpg);
+      background: url(images/chopin.jpg);
       background-size: cover;
     }
     .vids a:nth-child(3){
-      background: url(../images/bach.jpg);
+      background: url(images/bach.jpg);
       background-size: cover;
     }
     .vids a:nth-child(5){
-      background: url(../images/beethoven.jpg);
+      background: url(images/beethoven.jpg);
       background-size: cover;
     }
     .vids a:nth-child(7){
-      background: url(../images/pachelbel.jpg);
+      background: url(images/pachelbel.jpg);
       background-size: cover;
     }
     .vids a:nth-child(9){
@@ -598,27 +598,27 @@ td a{
     display: none;
   }
   .vids a:nth-child(1){
-    background: url(../images/chopin.jpg);
+    background: url(images/chopin.jpg);
     background-size: cover;
   }
   .vids a:nth-child(3){
-    background: url(../images/bach.jpg);
+    background: url(images/bach.jpg);
     background-size: cover;
   }
   .vids a:nth-child(5){
-    background: url(../images/beethoven.jpg);
+    background: url(images/beethoven.jpg);
     background-size: cover;
   }
   .vids a:nth-child(7){
-    background: url(../images/pachelbel.jpg);
+    background: url(images/pachelbel.jpg);
     background-size: cover;
   }
   .vids a:nth-child(9){
-    background: url(../images/beethoven2.jpg);
+    background: url(images/beethoven2.jpg);
     background-size: cover;
   }
   .vids a:nth-child(11){
-    background: url(../images/scriabin.jpg);
+    background: url(images/scriabin.jpg);
     background-size: cover;
   }
   /*Contact*/
